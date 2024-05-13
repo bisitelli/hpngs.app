@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-item a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color: #21D375;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+}
+
+.content-section .title{
+    font-size: 28px;
+}
+
+.content-section .content h3{
+    margin-top: 16px;
+}
+
+.content-section .content h3 span{
+    color: #21D375;
+}
+
+.content-section .content p{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content-section .content .button{
+    margin-top: 30px;
+}
+
+.content-section .content .button a{
+    background-color: #21D375;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    border-radius: 6px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .section{
+        margin-top: 20px;
+    }
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    body{
+      display: flex;
+      text-align: center;
+    }
+
+    li a{
+        font-size: 12px;
+    }
+
+}
